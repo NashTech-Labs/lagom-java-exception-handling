@@ -12,7 +12,7 @@
     
 #### Example ServiceCall
     Method type: GET
-    URL example: http://localhost:9000/read/data/serviceCall?color=RED
+    URL example: http://localhost:9000/read?color=DARKSALMON
 
     
 ### Running Unit Test Cases
