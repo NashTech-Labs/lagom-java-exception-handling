@@ -1,7 +1,7 @@
-package com.example.service.api;
+package com.knoldus.color.api;
 
 import akka.NotUsed;
-import com.example.service.model.ColorData;
+import com.knoldus.common.model.ColorData;
 import com.lightbend.lagom.javadsl.api.Descriptor;
 import com.lightbend.lagom.javadsl.api.Service;
 import com.lightbend.lagom.javadsl.api.ServiceCall;

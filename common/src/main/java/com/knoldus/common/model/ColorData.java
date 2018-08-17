@@ -1,4 +1,4 @@
-package com.example.service.model;
+package com.knoldus.common.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

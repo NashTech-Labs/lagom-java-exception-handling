@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <modules>
+        <module>common</module>
         <module>color-api</module>
         <module>color-impl</module>
     </modules>
@@ -26,12 +27,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -78,7 +73,7 @@
                     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
                     <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
                     <outputFile>${basedir}/target/checkstyle/checkstyle-output.xml</outputFile>
-                    <cacheFile>${basedir}/target/checkstyle/checkstyle-cachefile</cacheFile>
+                    <!--<cacheFile>${basedir}/target/checkstyle/checkstyle-cachefile</cacheFile>-->
                     <configLocation>${main.basedir}/custom_checkstyle.xml</configLocation>
                     <propertyExpansion>suppressions.file=${main.basedir}/checkstyle_suppressions.xml</propertyExpansion>
                     <suppressionsLocation>${main.basedir}/checkstyle_suppressions.xml</suppressionsLocation>

@@ -1,12 +1,11 @@
-package com.example.service.impl;
+package com.knoldus.color.impl;
 
-import com.example.service.model.ColorData;
+import com.knoldus.common.model.ColorData;
 import mockit.Tested;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.Assert.assertEquals;
 
 public class ColorServiceImplTest {
 
@@ -22,8 +21,8 @@ public class ColorServiceImplTest {
         ColorData data = colorService.read(COLOR).invoke()
                 .toCompletableFuture().get(10, TimeUnit.SECONDS);
 
-        assertEquals("color code does not match", COLOR_CODE, data.getColorCode());
-        assertEquals("RGB values do not match", RGB_VALUES, data.getRgbValues());
+        Assert.assertEquals("color code does not match", COLOR_CODE, data.getColorCode());
+        Assert.assertEquals("RGB values do not match", RGB_VALUES, data.getRgbValues());
     }
 
 }
