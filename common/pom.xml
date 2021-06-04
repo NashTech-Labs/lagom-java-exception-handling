@@ -39,7 +39,7 @@
         <akka.testkit.version>2.5.2</akka.testkit.version>
         <consul-client.version>0.14.0</consul-client.version>
         <eh-cache.version>2.10.3</eh-cache.version>
-        <hiberbate.hibernate-validation.version>6.0.9.Final</hiberbate.hibernate-validation.version>
+        <hiberbate.hibernate-validation.version>6.0.20.Final</hiberbate.hibernate-validation.version>
         <javax-el.version>3.0.0</javax-el.version>
         <javax.validation-api.version>2.0.1.Final</javax.validation-api.version>
         <json-flattener.version>0.4.0</json-flattener.version>
